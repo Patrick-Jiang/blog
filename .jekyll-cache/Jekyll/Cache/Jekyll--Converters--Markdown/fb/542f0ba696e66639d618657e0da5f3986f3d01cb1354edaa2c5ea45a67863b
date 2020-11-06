@@ -1,0 +1,81 @@
+I"<h3 id="1-evebita">1. EV/EBITA</h3>
+
+<p>EV</p>
+
+<p><a href="https://www.investopedia.com/terms/e/enterprisevalue.asp">Enterprise value</a> (EV) is a measure of the economic value of a company. It is considered to be a better valuation measure than <a href="https://www.investopedia.com/terms/m/marketcapitalization.asp">market capitalization</a>, since the latter doesn’t regard to the debt.</p>
+
+\[~ \\
+\begin{align}
+\text{EV}
+&amp;= (\text{Market capitalization}) + (\text{value of debt}) \\
+&amp;\hspace{1.5em} + \text{(minority interest)} + \text{(preferred shares)} - (\text{cash and cash equivalents})
+\end{align}\]
+
+<p><strong>Earnings before interest and taxes (EBIT)</strong> indicate a company’s earning before interest, taxes, and depreciation. <strong>Earnings before interest, taxes, depreciation and amortization (EBITDA)</strong> indicates.</p>
+
+\[~ \\
+\begin{align}
+\text{EBITDA}
+&amp;= \text{(Income before income taxes)} + \text{(IE)} + \text{(DE)} + \text{(AE)} \\
+&amp;= \text{(Operating income)} + \text{(DE)} + \text{(AE)}
+
+\end{align}\]
+
+<ul>
+  <li>EBT: Earnings Before Taxes:</li>
+  <li>EBIT: Earnings Before Interest and Taxes</li>
+  <li>EBITA: Earnings Before Interest, Taxes, DEpreciation, and Amortization</li>
+</ul>
+
+<p>\(\text{AE}\): Amortization Expense</p>
+
+<p>\(\text{DE}\): Depreciation Expense</p>
+
+<p>\(\text{IE}\): Interest expense</p>
+
+<p><strong>Total Revenue</strong></p>
+
+<p>Cost of sales = Operating expenses + Operating cost + …</p>
+
+<p><strong>Gross profit</strong> = Total Revenue - Cost of sales</p>
+
+<p>Selling, general and administrative expenses (SG&amp;A) = Sales commission + Advertising expenses + Personal expenses + Depreciation + …</p>
+
+<p>Research and Development (R&amp;D) = …</p>
+
+<p><strong>Operating income</strong> = Gross profit - (SG&amp;A + R&amp;D)</p>
+
+<p>Non-operating income = Interst income + Foreign exchange gains + Dividends income + …</p>
+
+<p>Non-operating expenses = Interst expenses +Foreign exchange losses + Dividends income + …</p>
+
+<p><strong>Ordinary income</strong> = Operating income + Non-operating income - Non-operating expeneses</p>
+
+<p>Extraordinary income =</p>
+
+<p>Extraordinary loss =</p>
+
+<p><strong>Income before income taxes</strong> = Ordinary income + Extraordinary income - Extraordinary loss</p>
+
+<p>Taxes = Corporation tax, residential tax and business tax + Income taxes-current …</p>
+
+<p><strong>Net income</strong> = Income before income taxes - Taxes</p>
+
+\[\begin{align}
+\text{EV} &amp;:= ge \\
+\text{EBITDA} &amp;:= \text{(Operating Profit)} + \text{(Depreciation)} \\ \\
+\text{EV/EBITDA} &amp;= \frac{(\text{Market capitalization}) + (\text{Interest-bearing debt}) - (\text{Cash equivalent})}{\text{(Operating Profit)} + \text{(Depreciation)}}
+\end{align}\]
+
+<ul>
+  <li><strong>EBITDA = Earnings Before Tax + Interest + Depreciation + Amortization</strong></li>
+</ul>
+
+<p>\(\text{AE}\): Amortization Expense</p>
+
+<p>\(\text{DE}\): Depreciation Expense</p>
+
+<p>\(\text{IE}\): Interest expense</p>
+
+<p>Note that <strong>Market capitalization</strong> can be obtained from the Nikkei website, <strong>interest-bearing debt</strong> can be obtained from the Kaisha-shikihou, and <strong>cash equivalent</strong> can be obtained from the cash flow statement in the securities report that can be viewed using EDINET.</p>
+:ET

@@ -1,0 +1,28 @@
+I"¥<h1 id="bash">Bash</h1>
+
+<p>In Git, commit messages are very imoportant to avoid confused commit log in your branch.</p>
+
+<p>But in some small projects that you develope alone, thinking about every commit message might be dull.</p>
+
+<p>I usualy use the following script to send local data to the remote repository. Please try it.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+<span class="nb">echo</span> <span class="nt">-e</span> <span class="s2">"</span><span class="se">\0</span><span class="s2">33[0;32mDeploying updates to GitHub...</span><span class="se">\0</span><span class="s2">33[0m"</span>
+
+<span class="c"># Go To .git root directory</span>
+<span class="nb">cd</span> ~/workspace/<span class="o">{</span>project_name<span class="o">}</span>
+
+<span class="c"># Add all changes to git.</span>
+git add <span class="nb">.</span>
+
+<span class="c"># Commit changes.</span>
+<span class="nv">msg</span><span class="o">=</span><span class="s2">"update repo </span><span class="sb">`</span><span class="nb">date</span><span class="sb">`</span><span class="s2">"</span>
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$# </span><span class="nt">-eq</span> 1 <span class="o">]</span>
+  <span class="k">then </span><span class="nv">msg</span><span class="o">=</span><span class="s2">"</span><span class="nv">$1</span><span class="s2">"</span>
+<span class="k">fi
+</span>git commit <span class="nt">-m</span> <span class="s2">"</span><span class="nv">$msg</span><span class="s2">"</span>
+
+<span class="c"># Push source and build repos.</span>
+git push origin master
+</code></pre></div></div>
+:ET

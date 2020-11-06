@@ -1,0 +1,117 @@
+I"�<h2 id="the-usage-of-a-tag">The Usage of ‘a’ Tag</h2>
+
+<p>The tag defines a hyperlink, which is used to link from one page to another. The most important attribute of the element is the href attribute, which indicates the link’s destination. By default, links will appear as follows in all browsers: An unvisited link is underlined and blue.</p>
+
+<h3 id="1-href">1. href</h3>
+
+<h4 id="1-linking-to-relative-urls">(1) Linking to relative URLs</h4>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"//google.com"</span><span class="nt">&gt;</span>Go To Google<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Q: Why use '//google.com' instead of 'https://www.google.com' and 'http://www.google.com?'
+A: Because '//' can automatically recognize if the website using the 'https' or 'http' protocol.
+</code></pre></div></div>
+
+<h4 id="2-jump-to-one-point-of-the-same-html-page">(2) Jump to one point of the same html page</h4>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p&gt;</span>1<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>2<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>3<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>4<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>5<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">"xxx"</span><span class="nt">&gt;</span>6<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>7<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>8<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>9<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#xxx"</span><span class="nt">&gt;</span>Go To 6<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You can locate one point in the same html page by using a id tag in the href.
+</code></pre></div></div>
+
+<h4 id="3-linking-to-email-or-telephone">(3) Linking to email or telephone</h4>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"mailto:librayuyue@163.com"</span><span class="nt">&gt;</span>Send Email to Me<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"tel:2032123212"</span> <span class="na">target=</span><span class="s">"_self"</span><span class="nt">&gt;</span>Send Message to Me<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+
+<h3 id="2-target">2. target</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(1) "_self" is a default value of target, it will open the new page based on current page.
+(2) "_blank" usually a ne tab
+(3) "_parent" the parent browsing context of the current one. If no parent, behaves as _self.
+(4) "_top" the topmost browsing context(the "highest" context that's an ancestor of the current one.) if no ancestors, behaves as _self.
+</code></pre></div></div>
+
+<h3 id="3-download">3. download</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MDN Quote: "Prompts the user to save the linekd URL instead of nabigating to it. Can be used with or without a value."
+</code></pre></div></div>
+
+<h3 id="4-rel--noopener">4. rel = noopener</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Not important
+</code></pre></div></div>
+
+<h2 id="the-usage-of-img-tag">The Usage of ‘img’ Tag</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">id=</span><span class="s">"xxx"</span> <span class="na">src=</span><span class="s">"dog.png"</span> <span class="na">alt=</span><span class="s">"one dog"</span> <span class="nt">/&gt;</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(1) The 'src' attribute is required. It contains the path to the image you want to embed.
+(2) 'alt' attribute holds a text description of the image. When the image failed to load, the alt text will be displayed.
+(3) 'max-width: 100%;' it sets the maximum width of an element. It prevents the used value of the width property from becoming larger than the value specified by max-width.
+</code></pre></div></div>
+
+<h2 id="the-usage-of-table-tag">The Usage of ‘table’ Tag</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;table&gt;</span>
+  <span class="nt">&lt;thead&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th&gt;</span>English<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Translate<span class="nt">&lt;/th&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/thead&gt;</span>
+  <span class="nt">&lt;tbody&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Hyper<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>超级<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Target<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>目标<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;</span>Reference<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>引用<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/tbody&gt;</span>
+  <span class="nt">&lt;tfoot&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;</span>空<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>空<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/tfoot&gt;</span>
+<span class="nt">&lt;/table&gt;</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>'table' contains 'thead', 'tbody' and 'tfoot'. These three tags can change the order but the browser will consistently display them in the default order.
+</code></pre></div></div>
+
+<h2 id="other-thoughts">Other Thoughts</h2>
+
+<h3 id="the-use-of-javascript-pseudo-code"><em>The Use of javascript:; （pseudo code）</em></h3>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"javascript: alert(1);"</span><span class="nt">&gt;</span>javascript pseudo protocols.<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"javascript:;"</span><span class="nt">&gt;</span>click<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>When click the second link, the page will not refreshed and there is no new record in the network tab. But the click effect is still work.
+</code></pre></div></div>
+
+<h3 id="the-difference-between-input-and-button"><em>The difference between ‘input’ and ‘button’</em></h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>you can not put any other thing inside the input tag, while you can put something like 'strong','em' or even 'img' tag inside a button tag.
+</code></pre></div></div>
+:ET

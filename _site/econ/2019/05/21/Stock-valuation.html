@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- head -->
+<head>
+  <!-- meta -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patrick's Tech Blog</title>
+  <!-- images -->
+  <link rel="icon" href="/assets/img/favicon-32x32.png">
+  <!-- css -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pontano+Sans&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="/assets/css/bulma.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <script type="text/javascript">
+    function before_search() {
+      var searchVal =
+        'site:github.com/Patrick-Jiang ' +
+        document.getElementById('search_input').value;
+      document.getElementById('search_q').value = searchVal;
+      return true;
+    }
+  </script>
+</head>
+
+
+  <body>
+    <div class="container is-max-widescreen">
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+
+      <div class="navbar-brand">
+
+        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+
+      </div>
+      <div class="navbar-menu" id="navMenu" >
+          <div class="navbar-start ml-6">
+
+            <a target="_self" href="/" class="navbar-item is-uppercase has-text-justified p-1" > Home </a>
+            <a target="_self" href="/about/" class="navbar-item is-uppercase has-text-justified"> About </a>
+            <a target="_self" href="/categories/" class="navbar-item is-uppercase has-text-justified"> Categories </a>
+
+          </div>
+
+        <div class="navbar-end">
+          <form target="_blank" onsubmit="return before_search();" action="https://google.com/search" method="get">
+            <input type="hidden" id="search_q" name="q" value="" />
+            <input  class="navbar-item mr-6 input is-inf0 is-small mt-3" tabindex="1" type="search" id="search_input"  placeholder="Search"/>
+          </form>
+        </div>
+    </div>
+  </nav>
+
+</div>
+
+    <header>
+      <div class="masterheader" id="masterheader"></div>
+    </header>
+    <div class="container is-max-widescreen">
+  <section id="main-content" role="main" class="main-content">
+    <div class="columns">
+      <div class="column is-8 mt-6">
+        <div class="container ">
+          <div class="content ">
+            <h1 class="is-size-3 has-text-left has-text-weight-semibold">Stock index for valuation</h1>
+            <div class="read-more clearfix">
+                <span class="date"><time>May 21, 2019</time></span>
+                <span>posted-in:&nbsp;</span>
+                <span class="posted-in">
+                  <a href="http://localhost:4000/categories#Econ">Econ</a>
+                </span>
+                <!-- <span class="comments">
+                  <a href="#disqus_thread">comments</a>
+                </span> -->
+            </div>
+          </div>
+
+          <div class="content">
+              <h3 id="1-evebita">1. EV/EBITA</h3>
+
+<p>EV</p>
+
+<p><a href="https://www.investopedia.com/terms/e/enterprisevalue.asp">Enterprise value</a> (EV) is a measure of the economic value of a company. It is considered to be a better valuation measure than <a href="https://www.investopedia.com/terms/m/marketcapitalization.asp">market capitalization</a>, since the latter doesn’t regard to the debt.</p>
+
+\[~ \\
+\begin{align}
+\text{EV}
+&amp;= (\text{Market capitalization}) + (\text{value of debt}) \\
+&amp;\hspace{1.5em} + \text{(minority interest)} + \text{(preferred shares)} - (\text{cash and cash equivalents})
+\end{align}\]
+
+<p><strong>Earnings before interest and taxes (EBIT)</strong> indicate a company’s earning before interest, taxes, and depreciation. <strong>Earnings before interest, taxes, depreciation and amortization (EBITDA)</strong> indicates.</p>
+
+\[~ \\
+\begin{align}
+\text{EBITDA}
+&amp;= \text{(Income before income taxes)} + \text{(IE)} + \text{(DE)} + \text{(AE)} \\
+&amp;= \text{(Operating income)} + \text{(DE)} + \text{(AE)}
+
+\end{align}\]
+
+<ul>
+  <li>EBT: Earnings Before Taxes:</li>
+  <li>EBIT: Earnings Before Interest and Taxes</li>
+  <li>EBITA: Earnings Before Interest, Taxes, DEpreciation, and Amortization</li>
+</ul>
+
+<p>\(\text{AE}\): Amortization Expense</p>
+
+<p>\(\text{DE}\): Depreciation Expense</p>
+
+<p>\(\text{IE}\): Interest expense</p>
+
+<p><strong>Total Revenue</strong></p>
+
+<p>Cost of sales = Operating expenses + Operating cost + …</p>
+
+<p><strong>Gross profit</strong> = Total Revenue - Cost of sales</p>
+
+<p>Selling, general and administrative expenses (SG&amp;A) = Sales commission + Advertising expenses + Personal expenses + Depreciation + …</p>
+
+<p>Research and Development (R&amp;D) = …</p>
+
+<p><strong>Operating income</strong> = Gross profit - (SG&amp;A + R&amp;D)</p>
+
+<p>Non-operating income = Interst income + Foreign exchange gains + Dividends income + …</p>
+
+<p>Non-operating expenses = Interst expenses +Foreign exchange losses + Dividends income + …</p>
+
+<p><strong>Ordinary income</strong> = Operating income + Non-operating income - Non-operating expeneses</p>
+
+<p>Extraordinary income =</p>
+
+<p>Extraordinary loss =</p>
+
+<p><strong>Income before income taxes</strong> = Ordinary income + Extraordinary income - Extraordinary loss</p>
+
+<p>Taxes = Corporation tax, residential tax and business tax + Income taxes-current …</p>
+
+<p><strong>Net income</strong> = Income before income taxes - Taxes</p>
+
+\[\begin{align}
+\text{EV} &amp;:= ge \\
+\text{EBITDA} &amp;:= \text{(Operating Profit)} + \text{(Depreciation)} \\ \\
+\text{EV/EBITDA} &amp;= \frac{(\text{Market capitalization}) + (\text{Interest-bearing debt}) - (\text{Cash equivalent})}{\text{(Operating Profit)} + \text{(Depreciation)}}
+\end{align}\]
+
+<ul>
+  <li><strong>EBITDA = Earnings Before Tax + Interest + Depreciation + Amortization</strong></li>
+</ul>
+
+<p>\(\text{AE}\): Amortization Expense</p>
+
+<p>\(\text{DE}\): Depreciation Expense</p>
+
+<p>\(\text{IE}\): Interest expense</p>
+
+<p>Note that <strong>Market capitalization</strong> can be obtained from the Nikkei website, <strong>interest-bearing debt</strong> can be obtained from the Kaisha-shikihou, and <strong>cash equivalent</strong> can be obtained from the cash flow statement in the securities report that can be viewed using EDINET.</p>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="column is-4 sidebar">
+        <div class="card ">
+  <div class="card-image">
+    <figure class="image is-4by5">
+      <img class="avatar" src="http://localhost:4000/assets/img/2.jpg" alt="Placeholder image" />
+    </figure>
+  </div>
+  <div class="card-content">
+    <div class="media">
+      <div class="media-content has-text-centered">
+        <p class="title is-4">Patrick Jiang</p>
+      </div>
+    </div>
+
+    <div class="content" id="site-info">
+      Patrick's Blog like site containing some random things. Here are messy
+      notes to organize my thoughts and sometimes useful information not on the
+      Web. I hope you'll enjoy them.
+      <br />
+      <div class="social">
+        <a
+          target="_blank"
+          class="github"
+          target="_blank"
+          href="https://github.com/Patrick-Jiang"
+          title="GitHub"
+          >GitHub</a
+        >
+        <a
+          target="_blank"
+          class="email"
+          href="mailto:patrick.jiang86@gmail.com"
+          title="Email"
+          >Email</a
+        >
+        <a
+          target="_blank"
+          class="linkedin"
+          target="_blank"
+          href="https://linkedin.com/in/patrick-jiang-21b584180"
+          title="LinkedIn"
+          >LinkedIn</a
+        >
+
+        <!-- <a target="_blank" class="rss" href="atom.xml" title="RSS">RSS</a> -->
+      </div>
+    </div>
+    <div class="card-content categories">
+      <!-- <p class="subtitle is-4 border__top">Categories</p> -->
+      <h2 class="subtitle is-5 has-text-weight-medium cat__h2">CATEGORIES</h2>
+      <p class="cat-list mb-5">
+        
+        
+          <a href="/categories/#Frontend"><strong>Frontend</strong></a>
+        
+        
+          <a href="/categories/#HTML"><strong>HTML</strong></a>
+        
+        
+          <a href="/categories/#Econ"><strong>Econ</strong></a>
+        
+        
+          <a href="/categories/#Tips"><strong>Tips</strong></a>
+        
+      </p>
+    </div>
+
+    <div class="card-content categories">
+      <!-- <p class="subtitle is-4 border__top">Categories</p> -->
+      <h2 class="subtitle is-5 has-text-weight-medium cat__h2">RECENT POST</h2>
+      <ul class="posts-list">
+        
+        <li class="post"> <a href="/tips/2020/10/31/welcome-to-jekyll-copy-2.html">Welcome To Jekyll copy 2</a> </li>
+        
+        <li class="post"> <a href="/econ/2019/05/21/Stock-valuation.html">Stock index for valuation</a> </li>
+        
+        <li class="post"> <a href="/html/2018/02/01/Usage-of-a-tagmarkdown.html">The Usage of 'a' Tag</a> </li>
+        
+        <li class="post"> <a href="/frontend/2018/01/21/Html-and-Css.html">HTML Practice</a> </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </section>
+</div>
+ <footer class="footer content has-text-centered has-background-white">
+  <p class="copyright">
+    Copyright &copy; Patrick Jiang 2018-2020 Powered by
+    <a target="_blank" href="https://jekyllrb.com/">Jekyll</a>,&nbsp; Proudly
+    hosted by
+    <a target="_blank" href="https://pages.github.com/">GitHub Pages</a>.
+  </p>
+</footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(
+          document.querySelectorAll('.navbar-burger'),
+          0
+        );
+
+        // Check if there are any navbar burgers
+        if ($navbarBurgers.length > 0) {
+          // Add a click event on each of them
+          $navbarBurgers.forEach((el) => {
+            el.addEventListener('click', () => {
+              // Get the target from the "data-target" attribute
+              const target = el.dataset.target;
+              const $target = document.getElementById(target);
+
+              // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+              el.classList.toggle('is-active');
+              $target.classList.toggle('is-active');
+            });
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

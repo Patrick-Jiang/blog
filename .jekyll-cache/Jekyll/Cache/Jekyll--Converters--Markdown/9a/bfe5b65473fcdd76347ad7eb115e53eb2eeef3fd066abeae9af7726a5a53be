@@ -1,0 +1,228 @@
+I"><h1 id="html-practice">HTML Practice</h1>
+
+<h3 id="shortcut-to-create-the-ul-list">shortcut to create the ul list</h3>
+
+<ol>
+  <li>select many lines</li>
+  <li>in the vscode，press ‘command +shift + p’ together</li>
+  <li>then search ‘emmet wrap’</li>
+  <li>Select ‘individual line with abbreviation’</li>
+  <li>enter ‘ul&gt;li*’</li>
+</ol>
+
+<h4 id="mbp-delete-shortcut">MBP delete Shortcut</h4>
+
+<ul>
+  <li><strong>option + delete:</strong>
+    <ul>
+      <li>delete one sentence or a word before the cursor</li>
+    </ul>
+  </li>
+  <li><strong>command + delete:</strong>
+    <ul>
+      <li>delete a whole line sentence</li>
+    </ul>
+  </li>
+  <li><strong>fn + delete:</strong>
+    <ul>
+      <li>delete the word after the cursor</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="when-add-photos">When add Photos</h3>
+
+<ul>
+  <li>Don’t transform the pictures, can’t set the width and height at the same time.</li>
+  <li>You can use the online tool to reshape the proportion of the pictures</li>
+  <li>If the size of the picture is too big( over 300kb), compress the picture to smaller size.</li>
+</ul>
+
+<h3 id="how-to-make-the-webpage-compatible-with-the-mobile-phone">How to make the webpage compatible with the mobile phone.</h3>
+
+<ul>
+  <li>add ‘meta:vp’ (tab) and ‘img max-width’</li>
+</ul>
+
+<h3 id="use-wifi-test-the-webpage-in-mobile-phone">Use WIFI test the webpage in mobile phone</h3>
+
+<h4 id="step">Step</h4>
+
+<ol>
+  <li>keep the mobile and the laptop within the same WIFI</li>
+  <li>you can use the IP and port to visit the laptop directly</li>
+  <li>Which IP address you can use? Try through all the IP addresses the http-server give to you.</li>
+</ol>
+
+<h3 id="️-tips-when-search-in-chrome">⭐️ Tips: when search in Chrome</h3>
+
+<ul>
+  <li>For example: search keywords =&gt;”chrome remote debug -csdn”, the “-csdn” means remove all the information source from the CSDN website.</li>
+</ul>
+
+<h3 id="️-open-the-inspect">⭐️ Open the ‘Inspect’</h3>
+
+<ul>
+  <li>cmd + option + J</li>
+</ul>
+
+<h2 id="systematic-learning">Systematic Learning</h2>
+
+<h3 id="what-you-need-to-get-the-hang-of-when-you-learn-a-new-language">What you need to get the Hang of when you learn a new language?</h3>
+
+<ol>
+  <li>grammar - know how to code</li>
+  <li>debug - know where is wrong</li>
+  <li>Look up reference materials - copy code</li>
+  <li>Who is the standard maker?</li>
+</ol>
+
+<h3 id="how-to-learn">How to learn?</h3>
+
+<ol>
+  <li>Copy - Copy document, and copy teacher</li>
+  <li>Run - running the code in your self compiler</li>
+  <li>Modify - infuse your own thought and run again</li>
+</ol>
+
+<h3 id="css-grammar">CSS Grammar</h3>
+
+<ul>
+  <li><em>@charset “UTF-8”</em></li>
+  <li><em>@import url(2.css);</em></li>
+  <li><em>@media (min-width: 100px) and (max-width: 200px){ … }</em></li>
+</ul>
+
+<blockquote>
+  <p>Attention:</p>
+
+  <ol>
+    <li>@charset must in the first line</li>
+    <li>the first two grammars must end with semicolon</li>
+    <li>@media is a unique block of knowledge</li>
+    <li>charset means “character sets”</li>
+    <li>UTF-8 is a compromise character encoding that can be as compact as ASCII (if the file is just plain English text) but can also contain any unicode characters (with some increase in file size).</li>
+  </ol>
+</blockquote>
+
+<h3 id="border-debug">Border DEBUG</h3>
+
+<h4 id="where-can-you-find-the-material-of-css">Where can you find the material of CSS?</h4>
+
+<blockquote>
+  <ul>
+    <li>Google keywords + MDN</li>
+    <li>CSS Tricks</li>
+    <li>张鑫旭博客</li>
+  </ul>
+</blockquote>
+
+<h3 id="where-can-i-find-the-practice-material">Where Can I find the practice material?</h3>
+
+<ul>
+  <li><strong><em>PSD</em></strong>
+    <blockquote>
+      <ul>
+        <li>Freepik, search PSD =&gt; search “web”</li>
+        <li>365PSD UI set</li>
+      </ul>
+    </blockquote>
+  </li>
+  <li><strong><em>Effective Pictures</em></strong>(NOT provide download)
+    <blockquote>
+      <ul>
+        <li>dribbble.com: top designer community =&gt; search “web”</li>
+        <li>Imitate by eye</li>
+      </ul>
+    </blockquote>
+  </li>
+  <li><strong><em>E-Commerce Website</em></strong>
+    <blockquote>
+      <ul>
+        <li>directly imitate</li>
+      </ul>
+    </blockquote>
+  </li>
+</ul>
+
+<p><strong><em>Important!!! DON’T OBSESSED WITH IMITATION!!!</em></strong></p>
+
+<blockquote>
+  <p>Only imitate no more than two PC website, phone website, UI set. Useless to do more imitation.</p>
+</blockquote>
+
+<h3 id="normal-flow">Normal Flow</h3>
+
+<blockquote>
+  <ul>
+    <li>Flow Direction
+      <ul>
+        <li>inline element direct from left to right, it will change line until to the rightmost.</li>
+        <li>block element direct from up to down, each block belongs to a line</li>
+        <li>inline-block direct from left to right, but it will never separate itself into two lines if it’s at the line end.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <p><strong><em>IMPORTANT!!! Don’t put a block element inside a inline element!!!</em></strong></p>
+
+  <ul>
+    <li>Width
+      <ul>
+        <li>the width of inline element is the sum of all elements inside the inline element, can’t use width</li>
+        <li>block will default calculate the width, can assign value to width</li>
+        <li>inline-block combine the merits of inline and block, can assign value to width</li>
+        <li>shortcut to create multiple span =&gt; span.id{The number is} *</li>
+        <li><strong><em>IMPORTANT!!! Never give a div element “width=100%;”</em></strong></li>
+      </ul>
+    </li>
+    <li>Height
+      <ul>
+        <li>The height of inline can be decided by the line-height</li>
+        <li>line-height can be inherited by the inside inline element</li>
+        <li>内联元素的文字如果在滚动条所在的框里，那么框会显示文字的所有内容，不存在需要横向拉动滚动条才能看见剩余的文字情况。</li>
+      </ul>
+    </li>
+  </ul>
+</blockquote>
+
+<h3 id="overflow">Overflow</h3>
+
+<ul>
+  <li>When content more than a container area, it will overflow</li>
+  <li>overflow: auto - based one the content to display the scroll bar or not</li>
+  <li>overflow: scroll - always display scroll bar</li>
+  <li>overflow: hidden - hidden the overflow part</li>
+  <li>overflow: visible - show all the content even it is out of the box</li>
+</ul>
+
+<h3 id="box-model">BOX Model</h3>
+
+<p><img src="imgs/box.png" alt="Box Model" /></p>
+
+<blockquote>
+  <ul>
+    <li>
+      <p>Content-Box</p>
+
+      <ul>
+        <li>Content is the yardstick of a border</li>
+        <li>content-box width = content width</li>
+      </ul>
+    </li>
+    <li>
+      <p>Border-Box</p>
+      <ul>
+        <li>Border is the yardstick of a border</li>
+        <li>border-box width = content width + padding + border</li>
+      </ul>
+    </li>
+  </ul>
+
+  <p>Which one is better to use?</p>
+
+  <ul>
+    <li>Border-box: including padding, border width together</li>
+  </ul>
+</blockquote>
+:ET

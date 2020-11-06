@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- head -->
+<head>
+  <!-- meta -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patrick's Tech Blog</title>
+  <!-- images -->
+  <link rel="icon" href="/assets/img/favicon-32x32.png">
+  <!-- css -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pontano+Sans&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="/assets/css/bulma.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <script type="text/javascript">
+    function before_search() {
+      var searchVal =
+        'site:github.com/Patrick-Jiang ' +
+        document.getElementById('search_input').value;
+      document.getElementById('search_q').value = searchVal;
+      return true;
+    }
+  </script>
+</head>
+
+
+  <body>
+    <div class="container is-max-widescreen">
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+
+      <div class="navbar-brand">
+
+        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+
+      </div>
+      <div class="navbar-menu" id="navMenu" >
+          <div class="navbar-start ml-6">
+
+            <a target="_self" href="/" class="navbar-item is-uppercase has-text-justified p-1" > Home </a>
+            <a target="_self" href="/about/" class="navbar-item is-uppercase has-text-justified"> About </a>
+            <a target="_self" href="/categories/" class="navbar-item is-uppercase has-text-justified"> Categories </a>
+
+          </div>
+
+        <div class="navbar-end">
+          <form target="_blank" onsubmit="return before_search();" action="https://google.com/search" method="get">
+            <input type="hidden" id="search_q" name="q" value="" />
+            <input  class="navbar-item mr-6 input is-inf0 is-small mt-3" tabindex="1" type="search" id="search_input"  placeholder="Search"/>
+          </form>
+        </div>
+    </div>
+  </nav>
+
+</div>
+
+    <header>
+      <div class="masterheader" id="masterheader"></div>
+    </header>
+     <footer class="footer content has-text-centered has-background-white">
+  <p class="copyright">
+    Copyright &copy; Patrick Jiang 2018-2020 Powered by
+    <a target="_blank" href="https://jekyllrb.com/">Jekyll</a>,&nbsp; Proudly
+    hosted by
+    <a target="_blank" href="https://pages.github.com/">GitHub Pages</a>.
+  </p>
+</footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(
+          document.querySelectorAll('.navbar-burger'),
+          0
+        );
+
+        // Check if there are any navbar burgers
+        if ($navbarBurgers.length > 0) {
+          // Add a click event on each of them
+          $navbarBurgers.forEach((el) => {
+            el.addEventListener('click', () => {
+              // Get the target from the "data-target" attribute
+              const target = el.dataset.target;
+              const $target = document.getElementById(target);
+
+              // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+              el.classList.toggle('is-active');
+              $target.classList.toggle('is-active');
+            });
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
