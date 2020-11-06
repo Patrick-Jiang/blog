@@ -1,0 +1,31 @@
+<div class="container is-max-widescreen">
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+
+      <div class="navbar-brand">
+
+        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+
+      </div>
+      <div class="navbar-menu" id="navMenu" >
+          <div class="navbar-start ml-6">
+
+            <a target="_self" href="{{"/" | relative_url }}" class="navbar-item is-uppercase has-text-justified p-1" > Home </a>
+            <a target="_self" href="{{"/about/" | relative_url }}" class="navbar-item is-uppercase has-text-justified"> About </a>
+            <a target="_self" href="{{"/categories/" | relative_url }}" class="navbar-item is-uppercase has-text-justified"> Categories </a>
+
+          </div>
+
+        <div class="navbar-end">
+          <form target="_blank" onsubmit="return before_search();" action="https://google.com/search" method="get">
+            <input type="hidden" id="search_q" name="q" value="" />
+            <input  class="navbar-item mr-6 input is-inf0 is-small mt-3" tabindex="1" type="search" id="search_input"  placeholder="Search"/>
+          </form>
+        </div>
+    </div>
+  </nav>
+
+</div>

@@ -1,0 +1,68 @@
+<div class="card ">
+  <div class="card-image">
+    <figure class="image is-4by5">
+      <img class="avatar" src="{{"/assets/img/2.jpg" | absolute_url }}" alt="Placeholder image" />
+    </figure>
+  </div>
+  <div class="card-content">
+    <div class="media">
+      <div class="media-content has-text-centered">
+        <p class="title is-4">Patrick Jiang</p>
+      </div>
+    </div>
+
+    <div class="content" id="site-info">
+      Patrick's Blog like site containing some random things. Here are messy
+      notes to organize my thoughts and sometimes useful information not on the
+      Web. I hope you'll enjoy them.
+      <br />
+      <div class="social">
+        <a
+          target="_blank"
+          class="github"
+          target="_blank"
+          href="https://github.com/{{ site.author.github }}"
+          title="GitHub"
+          >GitHub</a
+        >
+        <a
+          target="_blank"
+          class="email"
+          href="mailto:{{ site.author.email }}"
+          title="Email"
+          >Email</a
+        >
+        <a
+          target="_blank"
+          class="linkedin"
+          target="_blank"
+          href="https://linkedin.com/in/{{ site.author.linkedin }}"
+          title="LinkedIn"
+          >LinkedIn</a
+        >
+
+        <!-- <a target="_blank" class="rss" href="atom.xml" title="RSS">RSS</a> -->
+      </div>
+    </div>
+    <div class="card-content categories">
+      <!-- <p class="subtitle is-4 border__top">Categories</p> -->
+      <h2 class="subtitle is-5 has-text-weight-medium cat__h2">{{"Categories" | upcase}}</h2>
+      <p class="cat-list mb-5">
+        {% for category in site.categories %}
+        {% capture category_name %}{{ category | first }}{% endcapture %}
+          <a href="{{ "/categories/" | relative_url }}#{{ category_name }}"><strong>{{ category_name }}</strong></a>
+        {% endfor %}
+      </p>
+    </div>
+
+    <div class="card-content categories">
+      <!-- <p class="subtitle is-4 border__top">Categories</p> -->
+      <h2 class="subtitle is-5 has-text-weight-medium cat__h2">{{"Recent Post" | upcase}}</h2>
+      <ul class="posts-list">
+        {% for post in site.posts limit:7 %}
+        <li class="post"> <a href="{{ post.url | relative_url }}">{{ post.title }}</a> </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>

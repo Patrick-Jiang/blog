@@ -1,0 +1,60 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+layout: default
+---
+
+<div class="container is-max-widescreen">
+  <section id="main-content" role="main" class="main-content">
+    <div class="columns">
+      <div class="column is-8 mt-6">
+        {% for post in paginator.posts %}
+        <article class="">
+          <h1 class="is-size-3 has-text-weight-semibold post__title">
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </h1>
+          <br />
+          <div class="content">
+            {{ post.content  | remove_first:post.excerpt | truncate: 350 }}
+          </div>
+
+          <div class="more-left left">
+            <a href="{{ post.url }}">Read more</a>&nbsp;&nbsp;
+            <span class="date"
+              ><time>{{ post.date | date: '%B %d, %Y' }}</time></span
+            >
+            <span>category:&nbsp;</span>
+            <span class="posted-in">
+              <a href="{{ "/categories" | absolute_url }}#{{ post.categories }}">{{ post.categories }}</a>
+            </span>
+          </div>
+        </article>
+        <hr />
+        {% endfor %}
+
+        <!-- Pagination links -->
+        <div class="pagination">
+          {% if paginator.previous_page %}
+          <a href="{{ paginator.previous_page_path }}" class="previous">
+            Previous
+          </a>
+          {% else %}
+          <span class="previous">Previous</span>
+          {% endif %}
+          <span class="page_number">
+            Page: {{ paginator.page }} of {{ paginator.total_pages }}
+          </span>
+          {% if paginator.next_page %}
+          <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+          {% else %}
+          <span class="next">Next</span>
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="column is-4 sidebar">
+        {% include sidebar.html %}
+      </div>
+    </div>
+  </section>
+</div>
